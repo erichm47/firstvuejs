@@ -10,16 +10,19 @@
   <body>
 
     <div id="vue-app">
+        <!-- bag image -->
+        <div id="bag"></div>
 
-      <input type="text" v-model="myName" />
-      <span>{{ myName }}</span>
+        <!-- bag health -->
+        <div id="bag-health">
+          <div></div>
+        </div>
 
-      <input type="text" v-model="myAge" />
-      <span>{{ myAge }}</span>
-      <div id="canvas" v-on:mousemove="updateXY">
-        {{ x }}, {{ y }}
-      </div>
-
+        <!-- bag game controls -->
+        <div id="controls">
+          <button>Punch</button>
+          <button>Restart</button>
+        </div>
     </div>
 
     <script src="app.js"></script>
